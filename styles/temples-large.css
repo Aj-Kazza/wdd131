@@ -10,7 +10,6 @@
 
     .navigation ul {
         display: flex;
-        list-style: none;
         flex-wrap: nowrap;
     }
 

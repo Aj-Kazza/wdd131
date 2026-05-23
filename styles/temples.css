@@ -29,8 +29,15 @@ p, body {
     display: none;
 }
 
+.navigation ul {
+    list-style: none;
+}
+
 .open{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 #menu {
@@ -41,6 +48,7 @@ p, body {
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
+    color: white;
 }
 
 #menu::before {
@@ -117,7 +125,6 @@ footer {
 	gap: 25px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin: 0 auto;
-    padding: 1fr;
 }
 
 img {
@@ -128,8 +135,4 @@ img {
 
 figcaption {
     text-align: center;
-}
-
-#menu {
-    color: white;
 }
