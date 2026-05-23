@@ -1,0 +1,21 @@
+@media (min-width: 900px) {
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display:block;
+        background-color: var(--color2);
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+        flex-wrap: nowrap;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+}
