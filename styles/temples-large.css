@@ -3,18 +3,18 @@
         display: none;
     }
 
-    .navigation {
-        display:block;
+    nav {
+        display:flex;
         background-color: var(--color2);
     }
 
-    .navigation ul {
+    nav ul {
         display: flex;
         flex-wrap: nowrap;
     }
 
     header {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 }

@@ -19,7 +19,7 @@ p, body {
     font-family: var(--nunito);
 }
 
-.navigation {
+nav {
     list-style: none;
     background-color: var(--color1);
     align-items: center;
@@ -29,7 +29,7 @@ p, body {
     display: none;
 }
 
-.navigation ul {
+nav ul {
     list-style: none;
 }
 
@@ -44,7 +44,6 @@ p, body {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -59,16 +58,16 @@ p, body {
 	content: "✖";
 }
 
-.navigation li {
+nav li {
     flex: 1 1 auto;
 }
 
-.navigation li :hover {
+nav li :hover {
     background-color: var(--color3);
     color: var(--color2);
 }
 
-.navigation a {
+nav a {
     font-weight: 700;
     display: block;
     color: var(--color3);
