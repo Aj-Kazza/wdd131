@@ -1,0 +1,85 @@
+:root {
+    --color1:#153243;
+    --color2:#284B63;
+    --color3:#EEF0EB;
+    --neuton: "Neuton", serif;
+    --nunito: "Nunito", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--neuton);
+    color: var(--color1);
+}
+p, body {
+    font-family: var(--nunito);
+}
+
+header, footer {
+    background: var(--color1);
+    padding: 2rem;
+    text-align: center;
+}
+
+header p, footer p {
+    color: var(--color3);
+    padding: 1em;
+}
+
+header h1 {
+    color: var(--color3);
+    text-align: center;
+}
+
+.hero{
+    border-top: var(--color2) 2rem solid;
+    border-bottom: var(--color1) 0.5rem solid;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+picture {
+    background-color: var(--color1);
+    padding-bottom: 10px;
+}
+    
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-bottom: #304c5f54 1px solid;
+    font-size: 3.5vw;
+}
+
+.bold-side {
+    font-weight: bold;
+    text-align: right;
+    grid-column: 1/2;
+    padding: 5px;
+}
+
+.unbold {
+    text-align: left;
+    padding: 5px;
+}
+
+.card h2 {
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 5vw;
+}
+
+.weather img {
+    width: 15vw;
+    grid-column: 1/3;
+    justify-self: center;
+}

@@ -1,0 +1,39 @@
+@media (min-width: 800px) {
+    main {
+        position: relative;
+    }
+    .card {
+        background-color: var(--color3);
+        box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+        position: absolute;
+        font-size: 1rem;
+    }
+
+    .card h2 {
+        font-size: 2rem;
+        background-color: var(--color2);
+        color: var(--color3);
+        text-align: left;
+        padding: 10px;
+        margin-left: -20px;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    .data {
+        top: 50px;
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 50px;
+        right: 20px;
+    }
+
+}

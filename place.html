@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131: Home Country Page || Ari-John Katia</title>
+    <meta name="description" content="WDD 131 Home Country Page exercise using HTML, CSS and Javascript, focusing on Javascript functions to display results" />
+    <meta name="author" content="Ari-John Katia" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Kiribati</h1>
+    </header>
+    <main>
+      <div class="hero">
+        <picture class="hero-image">
+          <source media="(min-width: 800px)" srcset="images/bird-large.webp" />
+          <img
+            src="images/bird-small.webp"
+            alt="image of national bird of kiribati, Greater Frigate"
+            width="500"
+            height="250"
+          />
+        </picture>
+      </div>
+      <div class="card data">
+        <h2>Data</h2>
+
+        <div class="bold-side">
+          <p>Area:</p>
+          <p>Population:</p>
+          <p>Capital:</p>
+          <p>Languages:</p>
+          <p>Currency:</p>
+          <p>Time Zone:</p>
+          <p>Calling Code:</p>
+          <p>Internet TLD:</p>
+        </div>
+        <div class="unbold">
+          <p>811.9 km2</p>
+          <p>138,800</p>
+          <p>Tarawa</p>
+          <p>Glibertese, English</p>
+          <p>Australian Dollars</p>
+          <p>UTC+12, +13, +14</p>
+          <p>+686</p>
+          <p>.ki</p>
+        </div>
+      </div>
+
+      <div class="card weather">
+        <h2>Weather</h2>
+        <img src="images/cloud.svg" alt="icon of cloud" />
+
+        <div class="bold-side">
+          <p>Temperature:</p>
+          <p>Conditions:</p>
+          <p>Wind:</p>
+          <p>Wind Chill:</p>
+        </div>
+        <div class="unbold">
+          <span id="temperature"></span><br>
+          <span id="conditions"></span><br>
+          <span id="wind"></span><br>
+          <span id="wind-chill"></span><br>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
