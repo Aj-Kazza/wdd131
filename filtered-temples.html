@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Picture Album - Ari-John Katia</title>
+    <meta
+      name="description"
+      content="WDD 131: dynamic picture album using responsive navigation and grid displays"
+    />
+    <meta name="author" content="Ari-John Katia" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <span>Temple Album</span>
+      <button type="button" id="menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li id="home"><a href="#">Home</a></li>
+          <li id="old"><a href="#">Old</a></li>
+          <li id="new"><a href="#">New</a></li>
+          <li id="large"><a href="#">Large</a></li>
+          <li id="small"><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Home</h1>
+      <div id="container">
+
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
