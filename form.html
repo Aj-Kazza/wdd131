@@ -7,6 +7,7 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Ari-John Katia: Main Page for course content">
     <meta name="author" content="Ari-John Katia">
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
@@ -20,8 +21,8 @@
     </header>
     <main>
         <form action="review.html" method="get">
-            <div>
-                <p>Product Name:</p>
+            <div class="productName">
+                <label for="product">Product Name:</label>
                 <select name="product" id="product" required>
                     <option value="" selected disabled>Select a Product ...</option>
                 </select>
@@ -35,29 +36,29 @@
                 </div>
                 <div>
                     <label for="rate2">★★</label><br>
-                    <input type="radio" id="rate2" name="rating" value="2">
+                    <input type="radio" id="rate2" name="rating" value="2" requried>
                 </div>
                 <div>
                     <label for="rate3">★★★</label><br>
-                    <input type="radio" id="rate3" name="rating" value="3">
+                    <input type="radio" id="rate3" name="rating" value="3" required>
                 </div>
                 <div>
                     <label for="rate4">★★★★</label><br>
-                    <input type="radio" id="rate4" name="rating" value="4">
+                    <input type="radio" id="rate4" name="rating" value="4" required>
                 </div>
                 <div>
                     <label for="rate5">★★★★★</label><br>
-                    <input type="radio" id="rate5" name="rating" value="5">
+                    <input type="radio" id="rate5" name="rating" value="5" required>
                 </div>
             </div>
 
-            <div>
+            <div class="dateOfInstallation">
                 <label for="date">Date of Installation</label>
                 <br>
                 <input type="date" name="date" id="date" required>
             </div>
 
-            <div>
+            <div class="features">
                 <p>Which features did you find useful in the product?<br>
                 <i>(Check all that apply)</i></p>
 
@@ -70,11 +71,13 @@
                 <input type="checkbox" name="features" id="design" value="design">
                 <label for="design">Design</label>
             </div>
-            <div>
-                <p>Written Review <span>(Optional)</span></p>
+
+            <div class="writtenReview">
+                <label for="review">Written Review <span>(Optional)</span></label>
                 <textarea name="review" id="review" rows="6" cols="40"></textarea>
             </div>
-            <div>
+
+            <div class="yourName">
                 <label for="username">Your Name <span>(Optional)</span></label><br>
                 <input type="text" name="username" id="username">
             </div>
