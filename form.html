@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - Ari-John Katia</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Ari-John Katia: Main Page for course content">
+    <meta name="author" content="Ari-John Katia">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div>
+                <p>Product Name:</p>
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+            </div>
+            
+            <div class="rating">
+                <p>Overall Rating:</p>
+                <div>
+                    <label for="rate1">★</label><br>
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                </div>
+                <div>
+                    <label for="rate2">★★</label><br>
+                    <input type="radio" id="rate2" name="rating" value="2">
+                </div>
+                <div>
+                    <label for="rate3">★★★</label><br>
+                    <input type="radio" id="rate3" name="rating" value="3">
+                </div>
+                <div>
+                    <label for="rate4">★★★★</label><br>
+                    <input type="radio" id="rate4" name="rating" value="4">
+                </div>
+                <div>
+                    <label for="rate5">★★★★★</label><br>
+                    <input type="radio" id="rate5" name="rating" value="5">
+                </div>
+            </div>
+
+            <div>
+                <label for="date">Date of Installation</label>
+                <br>
+                <input type="date" name="date" id="date" required>
+            </div>
+
+            <div>
+                <p>Which features did you find useful in the product?<br>
+                <i>(Check all that apply)</i></p>
+
+                <input type="checkbox" name="features" id="durability" value="durability">
+                <label for="durability">Durability</label><br>
+                <input type="checkbox" name="features" id="ease" value="ease">
+                <label for="ease">Ease of Use</label><br>
+                <input type="checkbox" name="features" id="performance" value="performance">
+                <label for="performance">Performance</label><br>
+                <input type="checkbox" name="features" id="design" value="design">
+                <label for="design">Design</label>
+            </div>
+            <div>
+                <p>Written Review <span>(Optional)</span></p>
+                <textarea name="review" id="review" rows="6" cols="40"></textarea>
+            </div>
+            <div>
+                <label for="username">Your Name <span>(Optional)</span></label><br>
+                <input type="text" name="username" id="username">
+            </div>
+
+            <input type="submit" value="Post Review" class="submit">
+
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
