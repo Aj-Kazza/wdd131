@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Land Vehicles | Machines of War</title>
+
+    <link rel="icon" href="images/tonk1.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/land.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Land Vehicles</h1>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="land.html">Land</a></li>
+          <li><a href="air.html">Air</a></li>
+          <li><a href="sea.html">Sea</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/tanker.jpg" media="(min-width: 768px)" />
+          <img src="images/tanker-small.jpg" alt="WWI tank on battlefield" />
+        </picture>
+      </section>
+
+      <section class="content">
+        <p>
+          Land vehicles during World War I introduced armored warfare on a scale
+          never seen before. Tanks, armored cars, and supply trucks transformed
+          how battles were fought and supplied.
+        </p>
+      </section>
+
+      <div id="tanks"></div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

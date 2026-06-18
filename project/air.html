@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Vehicles | Machines of War</title>
+
+    <link rel="icon" href="images/tonk1.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/air.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Air Vehicles</h1>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="land.html">Land</a></li>
+          <li><a href="air.html">Air</a></li>
+          <li><a href="sea.html">Sea</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/plane.jpg" media="(min-width: 768px)" />
+          <img src="images/plane-small.jpg" alt="WWI tank on battlefield" />
+        </picture>
+      </section>
+
+      <section class="content">
+        <p>
+          Aircraft in World War I rapidly evolved from simple reconnaissance
+          planes into armed fighters. They changed warfare by introducing air
+          combat, scouting, and strategic bombing.
+        </p>
+      </section>
+
+      <div id="planes"></div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

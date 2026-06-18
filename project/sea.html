@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea Vehicles | Machines of War</title>
+
+    <link rel="icon" href="images/tonk1.ico" />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/sea.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Sea Vehicles</h1>
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="land.html">Land</a></li>
+          <li><a href="air.html">Air</a></li>
+          <li><a href="sea.html">Sea</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/ship.jpg" media="(min-width: 768px)" />
+          <img src="images/ship-small.jpg" alt="WWI tank on battlefield" />
+        </picture>
+      </section>
+
+      <section class="content">
+        <p>
+          Naval warfare during World War I saw the rise of dreadnoughts,
+          submarines, and convoy systems. These innovations reshaped global
+          naval strategy and maritime engineering.
+        </p>
+      </section>
+
+      <div id="ships"></div>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

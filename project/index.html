@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Machines of War</title>
+
+    <link rel="icon" href="images/tonk1.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Special+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="images/tonk.png" alt="Machines of War logo" class="logo" />
+        <h1>Machines of War</h1>
+        <p class="tagline">Vehicles from World War I</p>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="land.html">Land</a></li>
+          <li><a href="air.html">Air</a></li>
+          <li><a href="sea.html">Sea</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <picture>
+          <source srcset="images/ww1.png" media="(min-width: 768px)" />
+          <img src="images/ww1-small.jpg" alt="" />
+        </picture>
+        <article>
+          <h2>Explore the Machines That Changed History</h2>
+
+          <p>
+            Discover the tanks, aircraft, and ships that shaped World War I and
+            influenced modern transportation and engineering.
+          </p>
+
+          <a href="#history" class="cta-button"> Begin Exploring </a>
+        </article>
+      </section>
+
+      <section class="history" id="history">
+        <h2>World War I and the Rise of Military Vehicles</h2>
+
+        <p>
+          World War I (1914–1918) was a global conflict that involved many of
+          the world's major powers and introduced new forms of industrialized
+          warfare. Traditional tactics often resulted in stalemates,
+          particularly along the Western Front where trench warfare dominated
+          the battlefield. To overcome these challenges, nations invested
+          heavily in new technologies and vehicles designed to improve mobility,
+          communication, reconnaissance, and firepower.
+        </p>
+
+        <p>
+          Land vehicles such as tanks and armored cars were developed to cross
+          difficult terrain and break through enemy defenses. Aircraft were used
+          for reconnaissance, artillery spotting, and eventually aerial combat,
+          giving armies valuable information about enemy movements. At sea,
+          battleships, destroyers, and submarines played critical roles in
+          protecting supply routes, enforcing blockades, and challenging enemy
+          naval power. These wartime innovations not only influenced the outcome
+          of the war but also laid the foundation for many transportation and
+          engineering technologies used in civilian life today.
+        </p>
+      </section>
+
+      <section class="card-container">
+        <article class="card">
+          <h3>Technological Innovation</h3>
+
+          <p>
+            Learn how wartime engineering accelerated the development of
+            engines, communication systems, and vehicle design.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Lasting Impact</h3>
+
+          <p>
+            See how military vehicles inspired modern automobiles, aircraft,
+            shipping, and transportation networks.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Evolution of Warfare</h3>
+          <p>
+            Discover how vehicles changed military strategy and shaped future
+            conflicts.
+          </p>
+        </article>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <h2>Vehicles of the Great War</h2>
+
+        <div class="figure-group">
+          <a href="land.html"
+            ><figure>
+              <img src="images/tank.webp" alt="World War I tank" />
+              <figcaption>Land Vehicles</figcaption>
+            </figure></a
+          >
+
+          <a href="air.html"
+            ><figure>
+              <img src="images/plane.webp" alt="World War I aircraft" />
+              <figcaption>Aircraft</figcaption>
+            </figure></a
+          >
+
+          <a href="sea.html"
+            ><figure>
+              <img src="images/boat.webp" alt="World War I warship" />
+              <figcaption>Naval Vessels</figcaption>
+            </figure></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
+      <p>
+        <a href="siteplan.html">View Site Plan</a>
+      </p>
+    </footer>
+  </body>
+</html>

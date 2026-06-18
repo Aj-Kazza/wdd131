@@ -1,0 +1,41 @@
+/* Desktop View */
+@media screen and (min-width: 768px) {
+
+    main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    header {
+        padding: 3rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    /* Place some sections side-by-side if desired */
+    .two-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    table {
+        max-width: 800px;
+        margin: 1rem auto;
+    }
+
+    figure img {
+        max-width: 500px;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+}

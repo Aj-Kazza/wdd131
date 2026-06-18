@@ -1,0 +1,202 @@
+:root {
+    /* Primary Colors */
+    --color-background: #1A1C20;      /* Deep Charcoal */
+    --color-surface: #2D3845;         /* Gunmetal Blue */
+    --color-text: #E8E1D7;            /* Off-White */
+
+    /* Accent Colors */
+    --color-accent: #C65A2A;          /* Burnt Orange */
+    --color-accent-hover: #E07A32;    /* Amber Orange */
+
+    /* Utility Colors */
+    --color-border: #444444;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+
+    /* Typography */
+    --heading-text: "Istok Web", sans-serif;
+    --body-text: "Special Gothic", sans-serif;
+
+    /* Spacing */
+    --radius: 6px;
+    --transition: 0.2s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--heading-text);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--body-text);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--color-background),
+        var(--color-surface)
+    );
+    border-bottom: 4px solid var(--color-accent);
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Layout */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    gap: 2rem;
+}
+
+/* Sections */
+section,
+article,
+.card {
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+section h2 {
+    color: var(--color-accent);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+section h3 {
+    color: var(--color-accent-hover);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 1rem;
+}
+
+/* Images */
+figure {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    font-style: italic;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+thead {
+    background-color: var(--color-accent);
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--color-border);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+tbody tr:hover {
+    background-color: rgba(224, 122, 50, 0.15);
+    transition: var(--transition);
+}
+
+/* Links */
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+/* Buttons */
+button {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+button:hover {
+    background-color: var(--color-accent-hover);
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--color-surface);
+    border-top: 3px solid var(--color-accent);
+}
+
+
+
+
+#tanks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}

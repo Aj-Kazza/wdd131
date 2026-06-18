@@ -1,46 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Site Plan</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Plan || WDD 131 Final Project</title>
+    <meta
+      name="description"
+      content="Site plan for Machines of War, a website exploring World War I vehicles, their evolution, and their impact on modern technology."
+    />
+    <meta name="author" content="Ari-John Katia" />
+    <link rel="icon" href="images/tonk1.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Special+Gothic:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base-large.css" />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Site Plan</h1>
     </header>
 
-    <main>
-        <h2>Site Name:</h2>
-        <p></p>
+    <main class="container">
+      <section class="card">
+        <h2>Site Name</h2>
 
-        <h2>Site Purpose:</h2>
-        <p></p>
+        <a href="index.html"><p><strong>Machines of War: Vehicles from World War I</strong></p></a>
 
-        <h2>Scenarios:</h2>
-        <p></p>
-        <h3>Scenario 1:</h3>
-        <p></p>
-        <h3>Scenario 2:</h3>
-        <p></p>
+        <p>
+          The name "Machines of War" was chosen because it highlights the
+          vehicles that shaped World War I and emphasizes their role in
+          advancing technology that later influenced civilian transportation and
+          engineering.
+        </p>
+        <figure>
+          <img
+            src="images/tonk.png"
+            alt="Icon depicting a French light tank"
+            class="icon"
+          />
+          <figcaption>Website icon</figcaption>
+        </figure>
+      </section>
 
-        <h2>Color Schema:</h2>
-        <p></p>
-        <figure><img src="" alt=""><figcaption></figcaption></figure>
+      <section class="card">
+        <h2>Site Purpose</h2>
+        <p>
+          Showcases the different types of vehicles (land, air, and sea) used in
+          the First World War, their progressions in forwarding the war effort,
+          and the innovations and technology they brought to civilian use.
+        </p>
+      </section>
 
-        <h2>Typography:</h2>
-        <p></p>
-        <figure><img src="" alt=""><figcaption></figcaption></figure>
-        <figure><img src="" alt=""><figcaption></figcaption></figure>
+      <section class="card">
+        <h2>Scenarios</h2>
 
-        <h2>Wireframes:</h2>
-        <p></p>
-        <figure><img src="" alt=""><figcaption></figcaption></figure>
-        <figure><img src="" alt=""><figcaption></figcaption></figure>
+        <article class="scenario">
+          <h3>Scenario 1</h3>
+          <p>
+            How did World War 1 tanks influence the design of modern vehicles?
+          </p>
+        </article>
+
+        <article class="scenario">
+          <h3>Scenario 2</h3>
+          <p>
+            What technological advancements were made in WW1 aircraft and how
+            are they used today?
+          </p>
+        </article>
+        <article class="scenario">
+          <h3>Scenario 3</h3>
+          <p>
+            What innovations developed for WWI naval vessels later became common
+            in commercial shipping and transportation?
+          </p>
+        </article>
+      </section>
+
+      <section class="card">
+        <h2>Color Schema</h2>
+
+        <table class="color-table">
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Color</th>
+              <th>Hex</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Background</td>
+              <td>Deep Charcoal</td>
+              <td>#1A1C20</td>
+            </tr>
+            <tr>
+              <td>Secondary Background</td>
+              <td>Gunmetal Blue</td>
+              <td>#2D3845</td>
+            </tr>
+            <tr>
+              <td>Primary Text</td>
+              <td>Off-White</td>
+              <td>#E8E1D7</td>
+            </tr>
+            <tr>
+              <td>Accent</td>
+              <td>Burnt Orange</td>
+              <td>#C65A2A</td>
+            </tr>
+            <tr>
+              <td>Hover / Highlight</td>
+              <td>Amber Orange</td>
+              <td>#E07A32</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Deep Charcoal will be used as the main background color, Gunmetal Blue
+          for content cards and sections, Off-White for body text, Burnt Orange
+          for headings and accents, and Amber Orange for hover effects and
+          highlights.
+        </p>
+        <figure>
+          <img
+            src="images/scheme.png"
+            alt="Color scheme"
+            class="scheme-image"
+          />
+          <figcaption>Website color palette</figcaption>
+        </figure>
+      </section>
+
+      <section class="card">
+        <h2>Typography</h2>
+
+        <p>
+          Typography inspired by websites focused on vehicles, engineering, and
+          military history.
+        </p>
+
+        <div class="typography-demo">
+          <ul>
+            <li><strong>Istok Web</strong> — Headings (h1–h4)</li>
+            <li><strong>Special Gothic</strong> — Body text and paragraphs</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Wireframes</h2>
+
+        <div class="wireframes">
+          <figure>
+            <img
+              src="images/wireframe1.jpg"
+              alt="Desktop homepage wireframe showing header, navigation, content sections, and footer"
+            />
+            <figcaption>Desktop Layout</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/wireframe2.jpg"
+              alt="Mobile homepage wireframe showing stacked layout with header, content sections, and footer"
+            />
+            <figcaption>Mobile Layout</figcaption>
+          </figure>
+        </div>
+      </section>
     </main>
 
     <footer>
-
+      <p>© <span id="currentyear"></span> || Ari-John Katia || Kiribati</p>
+      <p id="lastModified"></p>
     </footer>
-</body>
+  </body>
 </html>
